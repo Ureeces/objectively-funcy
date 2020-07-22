@@ -31,6 +31,30 @@ const setAge = function(person, newAge) {
   person.age = newAge;
 }
 
+// giveBirthday - increments by 1 the age property of the 
+// given person object, or gives them an age of 1 
+// if they don't have that property 
+const giveBirthday = function(person) {
+  person.age = person.age + 1 || 1;
+}
+
+// marry - changes the married property of both given people
+// to true and sets the spouseName property to be equal to the full name
+// of the other person
+const marry = function(person1, person2) {
+  person1.married = true;
+  person1.spouseName = getFullName(person2);
+
+  person2.married = true;
+  person2.spouseName = getFullName(person1);
+}
+
+// divorce - changes the married property of both given people
+// to false and removes the spouseName property entirely from both
+// parties
+const divorce = function(person1, person2) {
+
+}
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
