@@ -53,7 +53,11 @@ const marry = function(person1, person2) {
 // to false and removes the spouseName property entirely from both
 // parties
 const divorce = function(person1, person2) {
+  person1.married = false;
+  delete person1.spouseName;
 
+  person2.married = false;
+  delete person2.spouseName;
 }
 
 // Our code here. Don't touch!
