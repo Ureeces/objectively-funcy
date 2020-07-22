@@ -1,4 +1,5 @@
 // Your code here.
+
 // getFirstName - returns the value of the
 // firstName property of the given person object
 const getFirstName = function(person) {
@@ -10,6 +11,7 @@ const getFirstName = function(person) {
 const getLastName = function(person) {
   return person.lastName;
 }
+
 // getFullName - returns the value of the 
 // firstName property plus the lastName property 
 // with a space in the middle for the given person object 
@@ -17,6 +19,17 @@ const getFullName = function(person) {
   return `${person.firstName} ${person.lastName}`;
 }
 
+// setFirstName - changes the value of the firstName property 
+// of the given person object to the given value 
+const setFirstName = function(person, newFirstName) {
+  person.firstName = newFirstName;
+}
+
+// setAge - changes the value of the age property 
+// of the given person object to the given value 
+const setAge = function(person, newAge) {
+  person.age = newAge;
+}
 
 
 // Our code here. Don't touch!
