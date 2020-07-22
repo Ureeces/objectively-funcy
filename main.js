@@ -1,6 +1,21 @@
 // Your code here.
+// getFirstName - returns the value of the
+// firstName property of the given person object
+const getFirstName = function(person) {
+  return person.firstName;
+}
 
-
+// getLastName - returns the value of the 
+// lastName property of the given person object 
+const getLastName = function(person) {
+  return person.lastName;
+}
+// getFullName - returns the value of the 
+// firstName property plus the lastName property 
+// with a space in the middle for the given person object 
+const getFullName = function(person) {
+  return `${person.firstName} ${person.lastName}`;
+}
 
 
 
